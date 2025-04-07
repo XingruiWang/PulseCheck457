@@ -35,19 +35,22 @@
 </i></p>
 
 
-<h2 class="title is-3">Introduction</h2>
+<h2 class="title is-3">🧠 Introduction</h2>
 <p>
 Spatial457 is a diagnostic benchmark designed to evaluate the 6D spatial reasoning capabilities of large multimodal models (LMMs). It systematically introduces four key capabilities—multi-object understanding, 2D and 3D localization, and 3D orientation—across five difficulty levels and seven question types, progressing from basic recognition to complex physical interaction.
 </p>
 
-<h2 class="title is-3">Download</h2>
+<h2 class="title is-3">📦 Download</h2>
 <p>
-You can access the full dataset in 🤗<a href="https://huggingface.co/datasets/RyanWW/Spatial457" target="_blank">
-   Hugging Face
-</a>.
+You can access the full dataset and evaluation toolkit:
+<ul>
+  <li><strong>Dataset:</strong> <a href="https://huggingface.co/datasets/RyanWW/Spatial457" target="_blank">Hugging Face</a></li>
+  <li><strong>Code:</strong> <a href="https://github.com/XingruiWang/Spatial457" target="_blank">GitHub Repository</a></li>
+  <li><strong>Paper:</strong> <a href="https://arxiv.org/abs/2502.08636" target="_blank">arXiv 2502.08636</a></li>
+</ul>
 </p>
 
-<h2 class="title is-3">Benchmark</h2>
+<h2 class="title is-3">📊 Benchmark</h2>
 <p>
 We benchmarked a wide range of state-of-the-art models—including GPT-4o, Gemini, Claude, and several open-source LMMs—on all subsets. Performance consistently drops as task difficulty increases. PO3D-VQA and humans remain most robust across all levels.
 </p>
