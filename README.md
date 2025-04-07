@@ -19,7 +19,7 @@
 </p>
 
 <p align="center">
-  <a href="https://xingruiwang.github.io/Spatial457/">Project Page</a> /
+  <a href="https://xingruiwang.github.io/projects/Spatial457/">Project Page</a> /
   <a href="https://arxiv.org/abs/2502.08636">Paper</a> /
   <a href="https://huggingface.co/datasets/RyanWW/Spatial457">Huggingface</a> /
   <a href="https://github.com/XingruiWang/Spatial457">Code</a>
