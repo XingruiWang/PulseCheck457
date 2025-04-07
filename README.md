@@ -42,8 +42,8 @@ Spatial457 is a diagnostic benchmark designed to evaluate the 6D spatial reasoni
 
 <h2 class="title is-3">Download</h2>
 <p>
-You can access the full dataset in <a href="https://huggingface.co/datasets/RyanWW/Spatial457" target="_blank">
-  🤗 Hugging Face
+You can access the full dataset in 🤗<a href="https://huggingface.co/datasets/RyanWW/Spatial457" target="_blank">
+   Hugging Face
 </a>.
 </p>
 
