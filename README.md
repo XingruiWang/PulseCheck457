@@ -9,8 +9,8 @@
   <a href=".">Wufei Ma</a><sup>1</sup>,
   <a href=".">Tiezheng Zhang</a><sup>1</sup>,
   <a href=".">Celso M de Melo</a><sup>2</sup>,
-  <a href=".">Jieneng Chen</a><sup>1</sup>,
-  <a href=".">Alan Yuille</a><sup>1</sup>
+  <a href=".">Jieneng Chen†</a><sup>1</sup>,
+  <a href=".">Alan Yuille†</a><sup>1</sup>
 </h4>
 
 <p align="center">
@@ -21,7 +21,7 @@
 <p align="center">
   <a href="https://xingruiwang.github.io/projects/Spatial457/">Project Page</a> /
   <a href="https://arxiv.org/abs/2502.08636">Paper</a> /
-  <a href="https://huggingface.co/datasets/RyanWW/Spatial457">Huggingface</a> /
+  <a href="https://huggingface.co/datasets/RyanWW/Spatial457">Huggingface Data Card🤗</a> /
   <a href="https://github.com/XingruiWang/Spatial457">Code</a>
 </p>
 
