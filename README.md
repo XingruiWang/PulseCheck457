@@ -1,3 +1,8 @@
+<div align="center">
+  <img src="https://xingruiwang.github.io/projects/Spatial457/static/images/icon_name.png" alt="Spatial457 Logo" width="240"/>
+</div>
+
+
 <h1 align="center">
   <a href="https://arxiv.org/abs/2502.08636">
     Spatial457: A Diagnostic Benchmark for 6D Spatial Reasoning of Large Multimodal Models
