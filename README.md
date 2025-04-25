@@ -63,7 +63,17 @@ We benchmarked a wide range of state-of-the-art models—including GPT-4o, Gemin
 The table below summarizes model performance across 7 subsets:
 </p>
 
+# 🔥Try on [VLMEvalKit](https://github.com/open-compass/VLMEvalKit).
 
+Spatial457 is also support by [VLMEvalKit](https://github.com/open-compass/VLMEvalKit)! Please try [here](https://github.com/open-compass/VLMEvalKit) for quick evaluation on most of the VLM. Evaluation can be done be running `run.py` in VLMEvalKit:
+
+```
+python run.py --data Spatial457 --model <model_name>
+```
+
+# Customized objects
+
+We use blender to render the scenes, so you can also add customed objects in to dataset. We also support you customized you own questions type / templates for your studies.  The source code of dataset generation is avaiable soon.
 
 <h2 class="title is-3">Citation</h2>
 
@@ -78,5 +88,8 @@ The table below summarizes model performance across 7 subsets:
 ```
 
 ---
+
+
+
 
 Content and toolkit are actively being updated. Stay tuned!
