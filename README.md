@@ -55,6 +55,7 @@ You can access the full dataset and evaluation toolkit:
 </ul>
 </p>
 
+<!--
 <h2 class="title is-3">📊 Benchmark</h2>
 <p>
 We benchmarked a wide range of state-of-the-art models—including GPT-4o, Gemini, Claude, and several open-source LMMs—on all subsets. Performance consistently drops as task difficulty increases. PO3D-VQA and humans remain most robust across all levels.
@@ -62,6 +63,7 @@ We benchmarked a wide range of state-of-the-art models—including GPT-4o, Gemin
 <p>
 The table below summarizes model performance across 7 subsets:
 </p>
+-->
 
 # 🔥Try on [VLMEvalKit](https://github.com/open-compass/VLMEvalKit).
 
