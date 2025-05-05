@@ -23,7 +23,6 @@ from tqdm import tqdm
 import bpy
 from mathutils import Vector
 import utils
-import ipdb; ipdb.set_trace()
 
 parser = argparse.ArgumentParser()
 
