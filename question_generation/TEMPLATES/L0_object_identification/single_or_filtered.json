@@ -1,0 +1,515 @@
+[
+    {
+        "text": [
+            "How many things are [either] <Z> <C> <S>s or <Z2> <C2> <S2>s?",
+            "How many objects are [either] <Z> <C> <S>s or <Z2> <C2> <S2>s?",
+            "What number of things are [either] <Z> <C> <S>s or <Z2> <C2> <S2>s?",
+            "What number of objects are [either] <Z> <C> <S>s or <Z2> <C2> <S2>s?"
+        ],
+        "nodes": [
+            {
+                "inputs": [],
+                "type": "scene"
+            },
+            {
+                "side_inputs": [
+                    "<Z>",
+                    "<C>",
+                    "<S>"
+                ],
+                "inputs": [
+                    0
+                ],
+                "type": "filter"
+            },
+            {
+                "inputs": [],
+                "type": "scene"
+            },
+            {
+                "side_inputs": [
+                    "<Z2>",
+                    "<C2>",
+                    "<S2>"
+                ],
+                "inputs": [
+                    2
+                ],
+                "type": "filter"
+            },
+            {
+                "inputs": [
+                    1,
+                    3
+                ],
+                "type": "union"
+            },
+            {
+                "inputs": [
+                    4
+                ],
+                "type": "count"
+            }
+        ],
+        "params": [
+            {
+                "type": "Size",
+                "name": "<Z>"
+            },
+            {
+                "type": "Color",
+                "name": "<C>"
+            },
+            {
+                "type": "Shape",
+                "name": "<S>"
+            },
+            {
+                "type": "Size",
+                "name": "<Z2>"
+            },
+            {
+                "type": "Color",
+                "name": "<C2>"
+            },
+            {
+                "type": "Shape",
+                "name": "<S2>"
+            }
+        ],
+        "constraints": [
+            {
+                "params": [
+                    1,
+                    3
+                ],
+                "type": "OUT_NEQ"
+            }
+        ]
+    },
+    {
+        "text": [
+            "How many <Z3> things are [either] <Z> <C> <S>s or <Z2> <C2> <S2>s?",
+            "How many <Z3> objects are [either] <Z> <C> <S>s or <Z2> <C2> <S2>s?",
+            "What number of <Z3> things are [either] <Z> <C> <S>s or <Z2> <C2> <S2>s?",
+            "What number of <Z3> objects are [either] <Z> <C> <S>s or <Z2> <C2> <S2>s?"
+        ],
+        "nodes": [
+            {
+                "inputs": [],
+                "type": "scene"
+            },
+            {
+                "side_inputs": [
+                    "<Z>",
+                    "<C>",
+                    "<S>"
+                ],
+                "inputs": [
+                    0
+                ],
+                "type": "filter"
+            },
+            {
+                "inputs": [],
+                "type": "scene"
+            },
+            {
+                "side_inputs": [
+                    "<Z2>",
+                    "<C2>",
+                    "<S2>"
+                ],
+                "inputs": [
+                    2
+                ],
+                "type": "filter"
+            },
+            {
+                "inputs": [
+                    1,
+                    3
+                ],
+                "type": "union"
+            },
+            {
+                "side_inputs": [
+                    "<Z3>"
+                ],
+                "inputs": [
+                    4
+                ],
+                "type": "filter_size"
+            },
+            {
+                "inputs": [
+                    5
+                ],
+                "type": "count"
+            }
+        ],
+        "params": [
+            {
+                "type": "Size",
+                "name": "<Z>"
+            },
+            {
+                "type": "Color",
+                "name": "<C>"
+            },
+            {
+                "type": "Shape",
+                "name": "<S>"
+            },
+            {
+                "type": "Size",
+                "name": "<Z2>"
+            },
+            {
+                "type": "Color",
+                "name": "<C2>"
+            },
+            {
+                "type": "Shape",
+                "name": "<S2>"
+            },
+            {
+                "type": "Size",
+                "name": "<Z3>"
+            }
+        ],
+        "constraints": [
+            {
+                "params": [
+                    1,
+                    3
+                ],
+                "type": "OUT_NEQ"
+            },
+            {
+                "params": [
+                    "<Z>"
+                ],
+                "type": "NULL"
+            },
+            {
+                "params": [
+                    "<Z2>"
+                ],
+                "type": "NULL"
+            }
+        ]
+    },
+    {
+        "text": [
+            "How many <C3> things are [either] <Z> <C> <S>s or <Z2> <C2> <S2>s?",
+            "How many <C3> objects are [either] <Z> <C> <S>s or <Z2> <C2> <S2>s?",
+            "What number of <C3> things are [either] <Z> <C> <S>s or <Z2> <C2> <S2>s?",
+            "What number of <C3> objects are [either] <Z> <C> <S>s or <Z2> <C2> <S2>s?"
+        ],
+        "nodes": [
+            {
+                "inputs": [],
+                "type": "scene"
+            },
+            {
+                "side_inputs": [
+                    "<Z>",
+                    "<C>",
+                    "<S>"
+                ],
+                "inputs": [
+                    0
+                ],
+                "type": "filter"
+            },
+            {
+                "inputs": [],
+                "type": "scene"
+            },
+            {
+                "side_inputs": [
+                    "<Z2>",
+                    "<C2>",
+                    "<S2>"
+                ],
+                "inputs": [
+                    2
+                ],
+                "type": "filter"
+            },
+            {
+                "inputs": [
+                    1,
+                    3
+                ],
+                "type": "union"
+            },
+            {
+                "side_inputs": [
+                    "<C3>"
+                ],
+                "inputs": [
+                    4
+                ],
+                "type": "filter_color"
+            },
+            {
+                "inputs": [
+                    5
+                ],
+                "type": "count"
+            }
+        ],
+        "params": [
+            {
+                "type": "Size",
+                "name": "<Z>"
+            },
+            {
+                "type": "Color",
+                "name": "<C>"
+            },
+            {
+                "type": "Shape",
+                "name": "<S>"
+            },
+            {
+                "type": "Size",
+                "name": "<Z2>"
+            },
+            {
+                "type": "Color",
+                "name": "<C2>"
+            },
+            {
+                "type": "Shape",
+                "name": "<S2>"
+            },
+            {
+                "type": "Color",
+                "name": "<C3>"
+            }
+        ],
+        "constraints": [
+            {
+                "params": [
+                    1,
+                    3
+                ],
+                "type": "OUT_NEQ"
+            },
+            {
+                "params": [
+                    "<C>"
+                ],
+                "type": "NULL"
+            },
+            {
+                "params": [
+                    "<C2>"
+                ],
+                "type": "NULL"
+            }
+        ]
+    },
+    {
+        "text": [
+            "How many things are [either] <Z> <C> <S>s or <Z2> <C2> <S2>s?",
+            "How many objects are [either] <Z> <C> <S>s or <Z2> <C2> <S2>s?",
+            "What number of things are [either] <Z> <C> <S>s or <Z2> <C2> <S2>s?",
+            "What number of objects are [either] <Z> <C> <S>s or <Z2> <C2> <S2>s?"
+        ],
+        "nodes": [
+            {
+                "inputs": [],
+                "type": "scene"
+            },
+            {
+                "side_inputs": [
+                    "<Z>",
+                    "<C>",
+                    "<S>"
+                ],
+                "inputs": [
+                    0
+                ],
+                "type": "filter"
+            },
+            {
+                "inputs": [],
+                "type": "scene"
+            },
+            {
+                "side_inputs": [
+                    "<Z2>",
+                    "<C2>",
+                    "<S2>"
+                ],
+                "inputs": [
+                    2
+                ],
+                "type": "filter"
+            },
+            {
+                "inputs": [
+                    1,
+                    3
+                ],
+                "type": "union"
+            },
+            {
+                "inputs": [
+                    4
+                ],
+                "type": "count"
+            }
+        ],
+        "params": [
+            {
+                "type": "Size",
+                "name": "<Z>"
+            },
+            {
+                "type": "Color",
+                "name": "<C>"
+            },
+            {
+                "type": "Shape",
+                "name": "<S>"
+            },
+            {
+                "type": "Size",
+                "name": "<Z2>"
+            },
+            {
+                "type": "Color",
+                "name": "<C2>"
+            },
+            {
+                "type": "Shape",
+                "name": "<S2>"
+            }
+        ],
+        "constraints": [
+            {
+                "params": [
+                    1,
+                    3
+                ],
+                "type": "OUT_NEQ"
+            }
+        ]
+    },
+    {
+        "text": [
+            "How many <S3>s are [either] <Z> <C> <S>s or <Z2> <C2> <S2>s?",
+            "What number of <S3>s are [either] <Z> <C> <S>s or <Z2> <C2> <S2>s?"
+        ],
+        "nodes": [
+            {
+                "inputs": [],
+                "type": "scene"
+            },
+            {
+                "inputs": [],
+                "type": "scene"
+            },
+            {
+                "side_inputs": [
+                    "<Z>",
+                    "<C>",
+                    "<S>"
+                ],
+                "inputs": [
+                    0
+                ],
+                "type": "filter"
+            },
+            {
+                "side_inputs": [
+                    "<Z2>",
+                    "<C2>",
+                    "<S2>"
+                ],
+                "inputs": [
+                    1
+                ],
+                "type": "filter"
+            },
+            {
+                "inputs": [
+                    2,
+                    3
+                ],
+                "type": "union"
+            },
+            {
+                "side_inputs": [
+                    "<S3>"
+                ],
+                "inputs": [
+                    4
+                ],
+                "type": "filter_shape"
+            },
+            {
+                "inputs": [
+                    5
+                ],
+                "type": "count"
+            }
+        ],
+        "params": [
+            {
+                "type": "Size",
+                "name": "<Z>"
+            },
+            {
+                "type": "Color",
+                "name": "<C>"
+            },
+            {
+                "type": "Shape",
+                "name": "<S>"
+            },
+            {
+                "type": "Size",
+                "name": "<Z2>"
+            },
+            {
+                "type": "Color",
+                "name": "<C2>"
+            },
+            {
+                "type": "Shape",
+                "name": "<S2>"
+            },
+            {
+                "type": "Shape",
+                "name": "<S3>"
+            }
+        ],
+        "constraints": [
+            {
+                "params": [
+                    2,
+                    3
+                ],
+                "type": "OUT_NEQ"
+            },
+            {
+                "params": [
+                    "<S>"
+                ],
+                "type": "NULL"
+            },
+            {
+                "params": [
+                    "<S2>"
+                ],
+                "type": "NULL"
+            }
+        ]
+    }
+]

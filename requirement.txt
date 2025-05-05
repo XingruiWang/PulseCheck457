@@ -1,0 +1,21 @@
+# Core numerical and scientific libraries
+numpy==1.26.4
+scipy==1.10.1
+pandas==2.0.3
+matplotlib==3.8.4
+
+# Blender Python API (for 3D renderng and simulation)
+bpy==3.5.0
+
+# Computer vision and image handling
+opencv-python==4.9.0.80
+imageio==2.34.0
+pillow==10.3.0
+
+
+# Others
+absl-py==1.4.0
+ipdb==0.13.13
+tqdm==4.66.2
+jupyter_core
+ipykernel

@@ -1,0 +1,712 @@
+[
+    {
+        "text": [
+            "Are there the same number of <Z2> <C2> <S2>s [that are] <R> the <Z> <C> <S> and <Z3> <C3> <S3>s?",
+            "Are there an equal number of <Z2> <C2> <S2>s [that are] <R> the <Z> <C> <S> and <Z3> <C3> <S3>s?",
+            "Is the number of <Z2> <C2> <S2>s [that are] <R> the <Z> <C> <S> the same as the number of <Z3> <C3> <S3>s?"
+        ],
+        "nodes": [
+            {
+                "inputs": [],
+                "type": "scene"
+            },
+            {
+                "side_inputs": [
+                    "<Z>",
+                    "<C>",
+                    "<S>"
+                ],
+                "inputs": [
+                    0
+                ],
+                "type": "filter_unique"
+            },
+            {
+                "side_inputs": [
+                    "<R>",
+                    "<Z2>",
+                    "<C2>",
+                    "<S2>"
+                ],
+                "inputs": [
+                    1
+                ],
+                "type": "relate_filter_count"
+            },
+            {
+                "inputs": [],
+                "type": "scene"
+            },
+            {
+                "side_inputs": [
+                    "<Z3>",
+                    "<C3>",
+                    "<S3>"
+                ],
+                "inputs": [
+                    3
+                ],
+                "type": "filter_count"
+            },
+            {
+                "inputs": [
+                    2,
+                    4
+                ],
+                "type": "equal_integer"
+            }
+        ],
+        "params": [
+            {
+                "type": "Size",
+                "name": "<Z>"
+            },
+            {
+                "type": "Color",
+                "name": "<C>"
+            },
+            {
+                "type": "Shape",
+                "name": "<S>"
+            },
+            {
+                "type": "Relation",
+                "name": "<R>"
+            },
+            {
+                "type": "Size",
+                "name": "<Z2>"
+            },
+            {
+                "type": "Color",
+                "name": "<C2>"
+            },
+            {
+                "type": "Shape",
+                "name": "<S2>"
+            },
+            {
+                "type": "Size",
+                "name": "<Z3>"
+            },
+            {
+                "type": "Color",
+                "name": "<C3>"
+            },
+            {
+                "type": "Shape",
+                "name": "<S3>"
+            }
+        ],
+        "constraints": []
+    },
+    {
+        "text": [
+            "Are there fewer <Z2> <C2> <S2>s [that are] <R> the <Z> <C> <S> than <Z3> <C3> <S3>s?",
+            "Is the number of <Z2> <C2> <S2>s [that are] <R> the <Z> <C> <S> less than the number of <Z3> <C3> <S3>s?"
+        ],
+        "nodes": [
+            {
+                "inputs": [],
+                "type": "scene"
+            },
+            {
+                "side_inputs": [
+                    "<Z>",
+                    "<C>",
+                    "<S>"
+                ],
+                "inputs": [
+                    0
+                ],
+                "type": "filter_unique"
+            },
+            {
+                "side_inputs": [
+                    "<R>",
+                    "<Z2>",
+                    "<C2>",
+                    "<S2>"
+                ],
+                "inputs": [
+                    1
+                ],
+                "type": "relate_filter_count"
+            },
+            {
+                "inputs": [],
+                "type": "scene"
+            },
+            {
+                "side_inputs": [
+                    "<Z3>",
+                    "<C3>",
+                    "<S3>"
+                ],
+                "inputs": [
+                    3
+                ],
+                "type": "filter_count"
+            },
+            {
+                "inputs": [
+                    2,
+                    4
+                ],
+                "type": "less_than"
+            }
+        ],
+        "params": [
+            {
+                "type": "Size",
+                "name": "<Z>"
+            },
+            {
+                "type": "Color",
+                "name": "<C>"
+            },
+            {
+                "type": "Shape",
+                "name": "<S>"
+            },
+            {
+                "type": "Relation",
+                "name": "<R>"
+            },
+            {
+                "type": "Size",
+                "name": "<Z2>"
+            },
+            {
+                "type": "Color",
+                "name": "<C2>"
+            },
+            {
+                "type": "Shape",
+                "name": "<S2>"
+            },
+            {
+                "type": "Size",
+                "name": "<Z3>"
+            },
+            {
+                "type": "Color",
+                "name": "<C3>"
+            },
+            {
+                "type": "Shape",
+                "name": "<S3>"
+            }
+        ],
+        "constraints": []
+    },
+    {
+        "text": [
+            "Are there more <Z2> <C2> <S2>s [that are] <R> the <Z> <C> <S> than <Z3> <C3> <S3>s?",
+            "Is the number of <Z2> <C2> <S2>s [that are] <R> the <Z> <C> <S> greater than the number of <Z3> <C3> <S3>s?"
+        ],
+        "nodes": [
+            {
+                "inputs": [],
+                "type": "scene"
+            },
+            {
+                "side_inputs": [
+                    "<Z>",
+                    "<C>",
+                    "<S>"
+                ],
+                "inputs": [
+                    0
+                ],
+                "type": "filter_unique"
+            },
+            {
+                "side_inputs": [
+                    "<R>",
+                    "<Z2>",
+                    "<C2>",
+                    "<S2>"
+                ],
+                "inputs": [
+                    1
+                ],
+                "type": "relate_filter_count"
+            },
+            {
+                "inputs": [],
+                "type": "scene"
+            },
+            {
+                "side_inputs": [
+                    "<Z3>",
+                    "<C3>",
+                    "<S3>"
+                ],
+                "inputs": [
+                    3
+                ],
+                "type": "filter_count"
+            },
+            {
+                "inputs": [
+                    2,
+                    4
+                ],
+                "type": "greater_than"
+            }
+        ],
+        "params": [
+            {
+                "type": "Size",
+                "name": "<Z>"
+            },
+            {
+                "type": "Color",
+                "name": "<C>"
+            },
+            {
+                "type": "Shape",
+                "name": "<S>"
+            },
+            {
+                "type": "Relation",
+                "name": "<R>"
+            },
+            {
+                "type": "Size",
+                "name": "<Z2>"
+            },
+            {
+                "type": "Color",
+                "name": "<C2>"
+            },
+            {
+                "type": "Shape",
+                "name": "<S2>"
+            },
+            {
+                "type": "Size",
+                "name": "<Z3>"
+            },
+            {
+                "type": "Color",
+                "name": "<C3>"
+            },
+            {
+                "type": "Shape",
+                "name": "<S3>"
+            }
+        ],
+        "constraints": []
+    },
+    {
+        "text": [
+            "Is the number of <Z2> <C2> <S2>s [that are] <R> the <Z> <C> <S> the same as the number of <Z4> <C4> <S4>s [that are] <R2> the <Z3> <C3> <S3>?",
+            "Are there an equal number of <Z2> <C2> <S2>s [that are] <R> the <Z> <C> <S> and <Z4> <C4> <S4>s [that are] <R2> the <Z3> <C3> <S3>?",
+            "Are there the same number of <Z2> <C2> <S2>s [that are] <R> the <Z> <C> <S> and <Z4> <C4> <S4>s [that are] <R2> the <Z3> <C3> <S3>?"
+        ],
+        "nodes": [
+            {
+                "inputs": [],
+                "type": "scene"
+            },
+            {
+                "side_inputs": [
+                    "<Z>",
+                    "<C>",
+                    "<S>"
+                ],
+                "inputs": [
+                    0
+                ],
+                "type": "filter_unique"
+            },
+            {
+                "side_inputs": [
+                    "<R>",
+                    "<Z2>",
+                    "<C2>",
+                    "<S2>"
+                ],
+                "inputs": [
+                    1
+                ],
+                "type": "relate_filter_count"
+            },
+            {
+                "inputs": [],
+                "type": "scene"
+            },
+            {
+                "side_inputs": [
+                    "<Z3>",
+                    "<C3>",
+                    "<S3>"
+                ],
+                "inputs": [
+                    3
+                ],
+                "type": "filter_unique"
+            },
+            {
+                "side_inputs": [
+                    "<R2>",
+                    "<Z4>",
+                    "<C4>",
+                    "<S4>"
+                ],
+                "inputs": [
+                    4
+                ],
+                "type": "relate_filter_count"
+            },
+            {
+                "inputs": [
+                    2,
+                    5
+                ],
+                "type": "equal_integer"
+            }
+        ],
+        "params": [
+            {
+                "type": "Size",
+                "name": "<Z>"
+            },
+            {
+                "type": "Color",
+                "name": "<C>"
+            },
+            {
+                "type": "Shape",
+                "name": "<S>"
+            },
+            {
+                "type": "Relation",
+                "name": "<R>"
+            },
+            {
+                "type": "Size",
+                "name": "<Z2>"
+            },
+            {
+                "type": "Color",
+                "name": "<C2>"
+            },
+            {
+                "type": "Shape",
+                "name": "<S2>"
+            },
+            {
+                "type": "Size",
+                "name": "<Z3>"
+            },
+            {
+                "type": "Color",
+                "name": "<C3>"
+            },
+            {
+                "type": "Shape",
+                "name": "<S3>"
+            },
+            {
+                "type": "Relation",
+                "name": "<R2>"
+            },
+            {
+                "type": "Size",
+                "name": "<Z4>"
+            },
+            {
+                "type": "Color",
+                "name": "<C4>"
+            },
+            {
+                "type": "Shape",
+                "name": "<S4>"
+            }
+        ],
+        "constraints": [
+            {
+                "params": [
+                    1,
+                    4
+                ],
+                "type": "OUT_NEQ"
+            }
+        ]
+    },
+    {
+        "text": [
+            "Is the number of <Z2> <C2> <S2>s [that are] <R> the <Z> <C> <S> less than the number of <Z4> <C4> <S4>s [that are] <R2> the <Z3> <C3> <S3>?",
+            "Are there fewer <Z2> <C2> <S2>s [that are] <R> the <Z> <C> <S> than <Z4> <C4> <S4>s [that are] <R2> the <Z3> <C3> <S3>?"
+        ],
+        "nodes": [
+            {
+                "inputs": [],
+                "type": "scene"
+            },
+            {
+                "side_inputs": [
+                    "<Z>",
+                    "<C>",
+                    "<S>"
+                ],
+                "inputs": [
+                    0
+                ],
+                "type": "filter_unique"
+            },
+            {
+                "side_inputs": [
+                    "<R>",
+                    "<Z2>",
+                    "<C2>",
+                    "<S2>"
+                ],
+                "inputs": [
+                    1
+                ],
+                "type": "relate_filter_count"
+            },
+            {
+                "inputs": [],
+                "type": "scene"
+            },
+            {
+                "side_inputs": [
+                    "<Z3>",
+                    "<C3>",
+                    "<S3>"
+                ],
+                "inputs": [
+                    3
+                ],
+                "type": "filter_unique"
+            },
+            {
+                "side_inputs": [
+                    "<R2>",
+                    "<Z4>",
+                    "<C4>",
+                    "<S4>"
+                ],
+                "inputs": [
+                    4
+                ],
+                "type": "relate_filter_count"
+            },
+            {
+                "inputs": [
+                    2,
+                    5
+                ],
+                "type": "less_than"
+            }
+        ],
+        "params": [
+            {
+                "type": "Size",
+                "name": "<Z>"
+            },
+            {
+                "type": "Color",
+                "name": "<C>"
+            },
+            {
+                "type": "Shape",
+                "name": "<S>"
+            },
+            {
+                "type": "Relation",
+                "name": "<R>"
+            },
+            {
+                "type": "Size",
+                "name": "<Z2>"
+            },
+            {
+                "type": "Color",
+                "name": "<C2>"
+            },
+            {
+                "type": "Shape",
+                "name": "<S2>"
+            },
+            {
+                "type": "Size",
+                "name": "<Z3>"
+            },
+            {
+                "type": "Color",
+                "name": "<C3>"
+            },
+            {
+                "type": "Shape",
+                "name": "<S3>"
+            },
+            {
+                "type": "Relation",
+                "name": "<R2>"
+            },
+            {
+                "type": "Size",
+                "name": "<Z4>"
+            },
+            {
+                "type": "Color",
+                "name": "<C4>"
+            },
+            {
+                "type": "Shape",
+                "name": "<S4>"
+            }
+        ],
+        "constraints": [
+            {
+                "params": [
+                    1,
+                    4
+                ],
+                "type": "OUT_NEQ"
+            }
+        ]
+    },
+    {
+        "text": [
+            "Are there more <Z2> <C2> <S2>s [that are] <R> the <Z> <C> <S> than <Z4> <C4> <S4>s [that are] <R2> the <Z3> <C3> <S3>?",
+            "Is the number of <Z2> <C2> <S2>s [that are] <R> the <Z> <C> <S> greater than the number of <Z4> <C4> <S4>s [that are] <R2> the <Z3> <C3> <S3>?"
+        ],
+        "nodes": [
+            {
+                "inputs": [],
+                "type": "scene"
+            },
+            {
+                "side_inputs": [
+                    "<Z>",
+                    "<C>",
+                    "<S>"
+                ],
+                "inputs": [
+                    0
+                ],
+                "type": "filter_unique"
+            },
+            {
+                "side_inputs": [
+                    "<R>",
+                    "<Z2>",
+                    "<C2>",
+                    "<S2>"
+                ],
+                "inputs": [
+                    1
+                ],
+                "type": "relate_filter_count"
+            },
+            {
+                "inputs": [],
+                "type": "scene"
+            },
+            {
+                "side_inputs": [
+                    "<Z3>",
+                    "<C3>",
+                    "<S3>"
+                ],
+                "inputs": [
+                    3
+                ],
+                "type": "filter_unique"
+            },
+            {
+                "side_inputs": [
+                    "<R2>",
+                    "<Z4>",
+                    "<C4>",
+                    "<S4>"
+                ],
+                "inputs": [
+                    4
+                ],
+                "type": "relate_filter_count"
+            },
+            {
+                "inputs": [
+                    2,
+                    5
+                ],
+                "type": "greater_than"
+            }
+        ],
+        "params": [
+            {
+                "type": "Size",
+                "name": "<Z>"
+            },
+            {
+                "type": "Color",
+                "name": "<C>"
+            },
+            {
+                "type": "Shape",
+                "name": "<S>"
+            },
+            {
+                "type": "Relation",
+                "name": "<R>"
+            },
+            {
+                "type": "Size",
+                "name": "<Z2>"
+            },
+            {
+                "type": "Color",
+                "name": "<C2>"
+            },
+            {
+                "type": "Shape",
+                "name": "<S2>"
+            },
+            {
+                "type": "Size",
+                "name": "<Z3>"
+            },
+            {
+                "type": "Color",
+                "name": "<C3>"
+            },
+            {
+                "type": "Shape",
+                "name": "<S3>"
+            },
+            {
+                "type": "Relation",
+                "name": "<R2>"
+            },
+            {
+                "type": "Size",
+                "name": "<Z4>"
+            },
+            {
+                "type": "Color",
+                "name": "<C4>"
+            },
+            {
+                "type": "Shape",
+                "name": "<S4>"
+            }
+        ],
+        "constraints": [
+            {
+                "params": [
+                    1,
+                    4
+                ],
+                "type": "OUT_NEQ"
+            }
+        ]
+    }
+]

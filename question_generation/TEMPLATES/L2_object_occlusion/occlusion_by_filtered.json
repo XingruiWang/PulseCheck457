@@ -1,0 +1,524 @@
+[
+    {
+        "text": [
+            "What is the size of the <Z> <C> <S> that is occluded by the <Z2> <C2> <S2>?"
+        ],
+        "nodes": [
+            {
+                "inputs": [],
+                "type": "scene"
+            },
+            {
+                "side_inputs": [
+                    "<Z2>",
+                    "<C2>",
+                    "<S2>"
+                ],
+                "inputs": [
+                    0
+                ],
+                "type": "filter_unique"
+            },
+            {
+                "inputs": [
+                    1
+                ],
+                "type": "relate_occluding"
+            },
+            {
+                "side_inputs": [
+                    "<Z>",
+                    "<C>",
+                    "<S>"
+                ],
+                "inputs": [
+                    2
+                ],
+                "type": "filter_unique"
+            },
+            {
+                "inputs": [
+                    3
+                ],
+                "type": "query_size"
+            }
+        ],
+        "params": [
+            {
+                "type": "Size",
+                "name": "<Z>"
+            },
+            {
+                "type": "Color",
+                "name": "<C>"
+            },
+            {
+                "type": "Shape",
+                "name": "<S>"
+            },
+            {
+                "type": "Size",
+                "name": "<Z2>"
+            },
+            {
+                "type": "Color",
+                "name": "<C2>"
+            },
+            {
+                "type": "Shape",
+                "name": "<S2>"
+            }
+        ],
+        "constraints": [
+            {
+                "params": [
+                    "<Z>"
+                ],
+                "type": "NULL"
+            },
+            {
+                "params": [
+                    "<Z2>",
+                    "<C2>",
+                    "<S2>"
+                ],
+                "type": "NOT_ALL_NULL"
+            }
+        ]
+    },
+    {
+        "text": [
+            "What is the color of the <Z> <C> <S> that is occluded by the <Z2> <C2> <S2>?"
+        ],
+        "nodes": [
+            {
+                "inputs": [],
+                "type": "scene"
+            },
+            {
+                "side_inputs": [
+                    "<Z2>",
+                    "<C2>",
+                    "<S2>"
+                ],
+                "inputs": [
+                    0
+                ],
+                "type": "filter_unique"
+            },
+            {
+                "inputs": [
+                    1
+                ],
+                "type": "relate_occluding"
+            },
+            {
+                "side_inputs": [
+                    "<Z>",
+                    "<C>",
+                    "<S>"
+                ],
+                "inputs": [
+                    2
+                ],
+                "type": "filter_unique"
+            },
+            {
+                "inputs": [
+                    3
+                ],
+                "type": "query_color"
+            }
+        ],
+        "params": [
+            {
+                "type": "Size",
+                "name": "<Z>"
+            },
+            {
+                "type": "Color",
+                "name": "<C>"
+            },
+            {
+                "type": "Shape",
+                "name": "<S>"
+            },
+            {
+                "type": "Size",
+                "name": "<Z2>"
+            },
+            {
+                "type": "Color",
+                "name": "<C2>"
+            },
+            {
+                "type": "Shape",
+                "name": "<S2>"
+            }
+        ],
+        "constraints": [
+            {
+                "params": [
+                    "<C>"
+                ],
+                "type": "NULL"
+            },
+            {
+                "params": [
+                    "<Z2>",
+                    "<C2>",
+                    "<S2>"
+                ],
+                "type": "NOT_ALL_NULL"
+            }
+        ]
+    },
+    {
+        "text": [
+            "What is the shape of the <Z> <C> <S> that is occluded by the <Z2> <C2> <S2>?"
+        ],
+        "nodes": [
+            {
+                "inputs": [],
+                "type": "scene"
+            },
+            {
+                "side_inputs": [
+                    "<Z2>",
+                    "<C2>",
+                    "<S2>"
+                ],
+                "inputs": [
+                    0
+                ],
+                "type": "filter_unique"
+            },
+            {
+                "inputs": [
+                    1
+                ],
+                "type": "relate_occluding"
+            },
+            {
+                "side_inputs": [
+                    "<Z>",
+                    "<C>",
+                    "<S>"
+                ],
+                "inputs": [
+                    2
+                ],
+                "type": "filter_unique"
+            },
+            {
+                "inputs": [
+                    3
+                ],
+                "type": "query_shape"
+            }
+        ],
+        "params": [
+            {
+                "type": "Size",
+                "name": "<Z>"
+            },
+            {
+                "type": "Color",
+                "name": "<C>"
+            },
+            {
+                "type": "Shape",
+                "name": "<S>"
+            },
+            {
+                "type": "Size",
+                "name": "<Z2>"
+            },
+            {
+                "type": "Color",
+                "name": "<C2>"
+            },
+            {
+                "type": "Shape",
+                "name": "<S2>"
+            }
+        ],
+        "constraints": [
+            {
+                "params": [
+                    "<S>"
+                ],
+                "type": "NULL"
+            },
+            {
+                "params": [
+                    "<Z2>",
+                    "<C2>",
+                    "<S2>"
+                ],
+                "type": "NOT_ALL_NULL"
+            }
+        ]
+    },
+    {
+        "text": [
+            "What is the size of the <Z> <C> <S> that occludes the <Z2> <C2> <S2>?"
+        ],
+        "nodes": [
+            {
+                "inputs": [],
+                "type": "scene"
+            },
+            {
+                "side_inputs": [
+                    "<Z2>",
+                    "<C2>",
+                    "<S2>"
+                ],
+                "inputs": [
+                    0
+                ],
+                "type": "filter_unique"
+            },
+            {
+                "inputs": [
+                    1
+                ],
+                "type": "relate_occluded"
+            },
+            {
+                "side_inputs": [
+                    "<Z>",
+                    "<C>",
+                    "<S>"
+                ],
+                "inputs": [
+                    2
+                ],
+                "type": "filter_unique"
+            },
+            {
+                "inputs": [
+                    3
+                ],
+                "type": "query_size"
+            }
+        ],
+        "params": [
+            {
+                "type": "Size",
+                "name": "<Z>"
+            },
+            {
+                "type": "Color",
+                "name": "<C>"
+            },
+            {
+                "type": "Shape",
+                "name": "<S>"
+            },
+            {
+                "type": "Size",
+                "name": "<Z2>"
+            },
+            {
+                "type": "Color",
+                "name": "<C2>"
+            },
+            {
+                "type": "Shape",
+                "name": "<S2>"
+            }
+        ],
+        "constraints": [
+            {
+                "params": [
+                    "<Z>"
+                ],
+                "type": "NULL"
+            },
+            {
+                "params": [
+                    "<Z2>",
+                    "<C2>",
+                    "<S2>"
+                ],
+                "type": "NOT_ALL_NULL"
+            }
+        ]
+    },
+    {
+        "text": [
+            "What is the color of the <Z> <C> <S> that occludes the <Z2> <C2> <S2>?"
+        ],
+        "nodes": [
+            {
+                "inputs": [],
+                "type": "scene"
+            },
+            {
+                "side_inputs": [
+                    "<Z2>",
+                    "<C2>",
+                    "<S2>"
+                ],
+                "inputs": [
+                    0
+                ],
+                "type": "filter_unique"
+            },
+            {
+                "inputs": [
+                    1
+                ],
+                "type": "relate_occluded"
+            },
+            {
+                "side_inputs": [
+                    "<Z>",
+                    "<C>",
+                    "<S>"
+                ],
+                "inputs": [
+                    2
+                ],
+                "type": "filter_unique"
+            },
+            {
+                "inputs": [
+                    3
+                ],
+                "type": "query_color"
+            }
+        ],
+        "params": [
+            {
+                "type": "Size",
+                "name": "<Z>"
+            },
+            {
+                "type": "Color",
+                "name": "<C>"
+            },
+            {
+                "type": "Shape",
+                "name": "<S>"
+            },
+            {
+                "type": "Size",
+                "name": "<Z2>"
+            },
+            {
+                "type": "Color",
+                "name": "<C2>"
+            },
+            {
+                "type": "Shape",
+                "name": "<S2>"
+            }
+        ],
+        "constraints": [
+            {
+                "params": [
+                    "<C>"
+                ],
+                "type": "NULL"
+            },
+            {
+                "params": [
+                    "<Z2>",
+                    "<C2>",
+                    "<S2>"
+                ],
+                "type": "NOT_ALL_NULL"
+            }
+        ]
+    },
+    {
+        "text": [
+            "What is the shape of the <Z> <C> <S> that occludes the <Z2> <C2> <S2>?"
+        ],
+        "nodes": [
+            {
+                "inputs": [],
+                "type": "scene"
+            },
+            {
+                "side_inputs": [
+                    "<Z2>",
+                    "<C2>",
+                    "<S2>"
+                ],
+                "inputs": [
+                    0
+                ],
+                "type": "filter_unique"
+            },
+            {
+                "inputs": [
+                    1
+                ],
+                "type": "relate_occluded"
+            },
+            {
+                "side_inputs": [
+                    "<Z>",
+                    "<C>",
+                    "<S>"
+                ],
+                "inputs": [
+                    2
+                ],
+                "type": "filter_unique"
+            },
+            {
+                "inputs": [
+                    3
+                ],
+                "type": "query_shape"
+            }
+        ],
+        "params": [
+            {
+                "type": "Size",
+                "name": "<Z>"
+            },
+            {
+                "type": "Color",
+                "name": "<C>"
+            },
+            {
+                "type": "Shape",
+                "name": "<S>"
+            },
+            {
+                "type": "Size",
+                "name": "<Z2>"
+            },
+            {
+                "type": "Color",
+                "name": "<C2>"
+            },
+            {
+                "type": "Shape",
+                "name": "<S2>"
+            }
+        ],
+        "constraints": [
+            {
+                "params": [
+                    "<S>"
+                ],
+                "type": "NULL"
+            },
+            {
+                "params": [
+                    "<Z2>",
+                    "<C2>",
+                    "<S2>"
+                ],
+                "type": "NOT_ALL_NULL"
+            }
+        ]
+    }
+]

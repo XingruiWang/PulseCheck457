@@ -1,0 +1,1768 @@
+[
+    {
+        "text": [
+            "Is the <Z2> <C2> <M2> <P> of the <Z> <C> <M> <S> occluded?"
+        ],
+        "nodes": [
+            {
+                "inputs": [],
+                "type": "scene"
+            },
+            {
+                "side_inputs": [
+                    "<Z>",
+                    "<C>",
+                    "<M>",
+                    "<S>"
+                ],
+                "inputs": [
+                    0
+                ],
+                "type": "filter_unique"
+            },
+            {
+                "inputs": [
+                    1
+                ],
+                "type": "object2part_all"
+            },
+            {
+                "side_inputs": [
+                    "<Z2>",
+                    "<C2>",
+                    "<M2>",
+                    "<P>"
+                ],
+                "inputs": [
+                    2
+                ],
+                "type": "partfilter_unique"
+            },
+            {
+                "inputs": [
+                    3
+                ],
+                "type": "partquery_occlusion"
+            }
+        ],
+        "params": [
+            {
+                "type": "Size",
+                "name": "<Z>"
+            },
+            {
+                "type": "Color",
+                "name": "<C>"
+            },
+            {
+                "type": "Material",
+                "name": "<M>"
+            },
+            {
+                "type": "Shape",
+                "name": "<S>"
+            },
+            {
+                "type": "Size",
+                "name": "<Z2>"
+            },
+            {
+                "type": "Color",
+                "name": "<C2>"
+            },
+            {
+                "type": "Material",
+                "name": "<M2>"
+            },
+            {
+                "type": "Partname",
+                "name": "<P>"
+            }
+        ],
+        "constraints": [
+            {
+                "params": [
+                    "<Z2>"
+                ],
+                "type": "NULL"
+            },
+            {
+                "params": [
+                    "<C2>"
+                ],
+                "type": "NULL"
+            },
+            {
+                "params": [
+                    "<M2>"
+                ],
+                "type": "NULL"
+            }
+        ]
+    },
+    {
+        "text": [
+            "Which part of the <Z> <C> <M> <S> is occluded?"
+        ],
+        "nodes": [
+            {
+                "inputs": [],
+                "type": "scene"
+            },
+            {
+                "side_inputs": [
+                    "<Z>",
+                    "<C>",
+                    "<M>",
+                    "<S>"
+                ],
+                "inputs": [
+                    0
+                ],
+                "type": "filter_unique"
+            },
+            {
+                "inputs": [
+                    1
+                ],
+                "type": "object2part_all"
+            },
+            {
+                "inputs": [
+                    2
+                ],
+                "type": "partfilter_occludee"
+            },
+            {
+                "inputs": [
+                    3
+                ],
+                "type": "unique"
+            },
+            {
+                "inputs": [
+                    4
+                ],
+                "type": "partquery_partname"
+            }
+        ],
+        "params": [
+            {
+                "type": "Size",
+                "name": "<Z>"
+            },
+            {
+                "type": "Color",
+                "name": "<C>"
+            },
+            {
+                "type": "Material",
+                "name": "<M>"
+            },
+            {
+                "type": "Shape",
+                "name": "<S>"
+            }
+        ],
+        "constraints": []
+    },
+    {
+        "text": [
+            "What is the size of the <Z> <C> <M> <S> that is occluded?"
+        ],
+        "nodes": [
+            {
+                "inputs": [],
+                "type": "scene"
+            },
+            {
+                "inputs": [
+                    0
+                ],
+                "type": "filter_occludee"
+            },
+            {
+                "side_inputs": [
+                    "<Z>",
+                    "<C>",
+                    "<M>",
+                    "<S>"
+                ],
+                "inputs": [
+                    1
+                ],
+                "type": "filter"
+            },
+            {
+                "inputs": [
+                    2
+                ],
+                "type": "unique"
+            },
+            {
+                "inputs": [
+                    3
+                ],
+                "type": "query_size"
+            }
+        ],
+        "params": [
+            {
+                "type": "Size",
+                "name": "<Z>"
+            },
+            {
+                "type": "Color",
+                "name": "<C>"
+            },
+            {
+                "type": "Material",
+                "name": "<M>"
+            },
+            {
+                "type": "Shape",
+                "name": "<S>"
+            }
+        ],
+        "constraints": [
+            {
+                "params": [
+                    "<Z>"
+                ],
+                "type": "NULL"
+            }
+        ]
+    },
+    {
+        "text": [
+            "What is the color of the <Z> <C> <M> <S> that is occluded?"
+        ],
+        "nodes": [
+            {
+                "inputs": [],
+                "type": "scene"
+            },
+            {
+                "inputs": [
+                    0
+                ],
+                "type": "filter_occludee"
+            },
+            {
+                "side_inputs": [
+                    "<Z>",
+                    "<C>",
+                    "<M>",
+                    "<S>"
+                ],
+                "inputs": [
+                    1
+                ],
+                "type": "filter"
+            },
+            {
+                "inputs": [
+                    2
+                ],
+                "type": "unique"
+            },
+            {
+                "inputs": [
+                    3
+                ],
+                "type": "query_color"
+            }
+        ],
+        "params": [
+            {
+                "type": "Size",
+                "name": "<Z>"
+            },
+            {
+                "type": "Color",
+                "name": "<C>"
+            },
+            {
+                "type": "Material",
+                "name": "<M>"
+            },
+            {
+                "type": "Shape",
+                "name": "<S>"
+            }
+        ],
+        "constraints": [
+            {
+                "params": [
+                    "<C>"
+                ],
+                "type": "NULL"
+            }
+        ]
+    },
+    {
+        "text": [
+            "What is the material of the <Z> <C> <M> <S> that is occluded?"
+        ],
+        "nodes": [
+            {
+                "inputs": [],
+                "type": "scene"
+            },
+            {
+                "inputs": [
+                    0
+                ],
+                "type": "filter_occludee"
+            },
+            {
+                "side_inputs": [
+                    "<Z>",
+                    "<C>",
+                    "<M>",
+                    "<S>"
+                ],
+                "inputs": [
+                    1
+                ],
+                "type": "filter"
+            },
+            {
+                "inputs": [
+                    2
+                ],
+                "type": "unique"
+            },
+            {
+                "inputs": [
+                    3
+                ],
+                "type": "query_material"
+            }
+        ],
+        "params": [
+            {
+                "type": "Size",
+                "name": "<Z>"
+            },
+            {
+                "type": "Color",
+                "name": "<C>"
+            },
+            {
+                "type": "Material",
+                "name": "<M>"
+            },
+            {
+                "type": "Shape",
+                "name": "<S>"
+            }
+        ],
+        "constraints": [
+            {
+                "params": [
+                    "<M>"
+                ],
+                "type": "NULL"
+            }
+        ]
+    },
+    {
+        "text": [
+            "What is the shape of the <Z> <C> <M> <S> that is occluded?"
+        ],
+        "nodes": [
+            {
+                "inputs": [],
+                "type": "scene"
+            },
+            {
+                "inputs": [
+                    0
+                ],
+                "type": "filter_occludee"
+            },
+            {
+                "side_inputs": [
+                    "<Z>",
+                    "<C>",
+                    "<M>",
+                    "<S>"
+                ],
+                "inputs": [
+                    1
+                ],
+                "type": "filter"
+            },
+            {
+                "inputs": [
+                    2
+                ],
+                "type": "unique"
+            },
+            {
+                "inputs": [
+                    3
+                ],
+                "type": "query_shape"
+            }
+        ],
+        "params": [
+            {
+                "type": "Size",
+                "name": "<Z>"
+            },
+            {
+                "type": "Color",
+                "name": "<C>"
+            },
+            {
+                "type": "Material",
+                "name": "<M>"
+            },
+            {
+                "type": "Shape",
+                "name": "<S>"
+            }
+        ],
+        "constraints": [
+            {
+                "params": [
+                    "<S>"
+                ],
+                "type": "NULL"
+            }
+        ]
+    },
+    {
+        "text": [
+            "What is the shape of the <Z> <C> <M> <S> whose <Z2> <C2> <M2> <P> is occluded?"
+        ],
+        "nodes": [
+            {
+                "inputs": [],
+                "type": "scene"
+            },
+            {
+                "side_inputs": [
+                    "<Z>",
+                    "<C>",
+                    "<M>",
+                    "<S>"
+                ],
+                "inputs": [
+                    0
+                ],
+                "type": "filter"
+            },
+            {
+                "inputs": [
+                    1
+                ],
+                "type": "object2part_all"
+            },
+            {
+                "inputs": [
+                    2
+                ],
+                "type": "partfilter_occludee"
+            },
+            {
+                "side_inputs": [
+                    "<Z2>",
+                    "<C2>",
+                    "<M2>",
+                    "<P>"
+                ],
+                "inputs": [
+                    3
+                ],
+                "type": "partfilter"
+            },
+            {
+                "inputs": [
+                    4
+                ],
+                "type": "part2object"
+            },
+            {
+                "inputs": [
+                    5
+                ],
+                "type": "unique"
+            },
+            {
+                "inputs": [
+                    6
+                ],
+                "type": "query_shape"
+            }
+        ],
+        "params": [
+            {
+                "type": "Size",
+                "name": "<Z>"
+            },
+            {
+                "type": "Color",
+                "name": "<C>"
+            },
+            {
+                "type": "Material",
+                "name": "<M>"
+            },
+            {
+                "type": "Shape",
+                "name": "<S>"
+            },
+            {
+                "type": "Size",
+                "name": "<Z2>"
+            },
+            {
+                "type": "Color",
+                "name": "<C2>"
+            },
+            {
+                "type": "Material",
+                "name": "<M2>"
+            },
+            {
+                "type": "Partname",
+                "name": "<P>"
+            }
+        ],
+        "constraints": [
+            {
+                "params": [
+                    "<S>"
+                ],
+                "type": "NULL"
+            },
+            {
+                "params": [
+                    "<Z2>"
+                ],
+                "type": "NULL"
+            },
+            {
+                "params": [
+                    "<C2>"
+                ],
+                "type": "NULL"
+            },
+            {
+                "params": [
+                    "<M2>"
+                ],
+                "type": "NULL"
+            }
+        ]
+    },
+    {
+        "text": [
+            "What is the color of the <Z> <C> <M> <S> whose <Z2> <C2> <M2> <P> is occluded?"
+        ],
+        "nodes": [
+            {
+                "inputs": [],
+                "type": "scene"
+            },
+            {
+                "side_inputs": [
+                    "<Z>",
+                    "<C>",
+                    "<M>",
+                    "<S>"
+                ],
+                "inputs": [
+                    0
+                ],
+                "type": "filter"
+            },
+            {
+                "inputs": [
+                    1
+                ],
+                "type": "object2part_all"
+            },
+            {
+                "inputs": [
+                    2
+                ],
+                "type": "partfilter_occludee"
+            },
+            {
+                "side_inputs": [
+                    "<Z2>",
+                    "<C2>",
+                    "<M2>",
+                    "<P>"
+                ],
+                "inputs": [
+                    3
+                ],
+                "type": "partfilter"
+            },
+            {
+                "inputs": [
+                    4
+                ],
+                "type": "part2object"
+            },
+            {
+                "inputs": [
+                    5
+                ],
+                "type": "unique"
+            },
+            {
+                "inputs": [
+                    6
+                ],
+                "type": "query_color"
+            }
+        ],
+        "params": [
+            {
+                "type": "Size",
+                "name": "<Z>"
+            },
+            {
+                "type": "Color",
+                "name": "<C>"
+            },
+            {
+                "type": "Material",
+                "name": "<M>"
+            },
+            {
+                "type": "Shape",
+                "name": "<S>"
+            },
+            {
+                "type": "Size",
+                "name": "<Z2>"
+            },
+            {
+                "type": "Color",
+                "name": "<C2>"
+            },
+            {
+                "type": "Material",
+                "name": "<M2>"
+            },
+            {
+                "type": "Partname",
+                "name": "<P>"
+            }
+        ],
+        "constraints": [
+            {
+                "params": [
+                    "<C>"
+                ],
+                "type": "NULL"
+            },
+            {
+                "params": [
+                    "<Z2>"
+                ],
+                "type": "NULL"
+            },
+            {
+                "params": [
+                    "<C2>"
+                ],
+                "type": "NULL"
+            },
+            {
+                "params": [
+                    "<M2>"
+                ],
+                "type": "NULL"
+            }
+        ]
+    },
+    {
+        "text": [
+            "What is the material of the <Z> <C> <M> <S> whose <Z2> <C2> <M2> <P> is occluded?"
+        ],
+        "nodes": [
+            {
+                "inputs": [],
+                "type": "scene"
+            },
+            {
+                "side_inputs": [
+                    "<Z>",
+                    "<C>",
+                    "<M>",
+                    "<S>"
+                ],
+                "inputs": [
+                    0
+                ],
+                "type": "filter"
+            },
+            {
+                "inputs": [
+                    1
+                ],
+                "type": "object2part_all"
+            },
+            {
+                "inputs": [
+                    2
+                ],
+                "type": "partfilter_occludee"
+            },
+            {
+                "side_inputs": [
+                    "<Z2>",
+                    "<C2>",
+                    "<M2>",
+                    "<P>"
+                ],
+                "inputs": [
+                    3
+                ],
+                "type": "partfilter"
+            },
+            {
+                "inputs": [
+                    4
+                ],
+                "type": "part2object"
+            },
+            {
+                "inputs": [
+                    5
+                ],
+                "type": "unique"
+            },
+            {
+                "inputs": [
+                    6
+                ],
+                "type": "query_material"
+            }
+        ],
+        "params": [
+            {
+                "type": "Size",
+                "name": "<Z>"
+            },
+            {
+                "type": "Color",
+                "name": "<C>"
+            },
+            {
+                "type": "Material",
+                "name": "<M>"
+            },
+            {
+                "type": "Shape",
+                "name": "<S>"
+            },
+            {
+                "type": "Size",
+                "name": "<Z2>"
+            },
+            {
+                "type": "Color",
+                "name": "<C2>"
+            },
+            {
+                "type": "Material",
+                "name": "<M2>"
+            },
+            {
+                "type": "Partname",
+                "name": "<P>"
+            }
+        ],
+        "constraints": [
+            {
+                "params": [
+                    "<M>"
+                ],
+                "type": "NULL"
+            },
+            {
+                "params": [
+                    "<Z2>"
+                ],
+                "type": "NULL"
+            },
+            {
+                "params": [
+                    "<C2>"
+                ],
+                "type": "NULL"
+            },
+            {
+                "params": [
+                    "<M2>"
+                ],
+                "type": "NULL"
+            }
+        ]
+    },
+    {
+        "text": [
+            "What is the size of the <Z> <C> <M> <S> whose <Z2> <C2> <M2> <P> is occluded?"
+        ],
+        "nodes": [
+            {
+                "inputs": [],
+                "type": "scene"
+            },
+            {
+                "side_inputs": [
+                    "<Z>",
+                    "<C>",
+                    "<M>",
+                    "<S>"
+                ],
+                "inputs": [
+                    0
+                ],
+                "type": "filter"
+            },
+            {
+                "inputs": [
+                    1
+                ],
+                "type": "object2part_all"
+            },
+            {
+                "inputs": [
+                    2
+                ],
+                "type": "partfilter_occludee"
+            },
+            {
+                "side_inputs": [
+                    "<Z2>",
+                    "<C2>",
+                    "<M2>",
+                    "<P>"
+                ],
+                "inputs": [
+                    3
+                ],
+                "type": "partfilter"
+            },
+            {
+                "inputs": [
+                    4
+                ],
+                "type": "part2object"
+            },
+            {
+                "inputs": [
+                    5
+                ],
+                "type": "unique"
+            },
+            {
+                "inputs": [
+                    6
+                ],
+                "type": "query_size"
+            }
+        ],
+        "params": [
+            {
+                "type": "Size",
+                "name": "<Z>"
+            },
+            {
+                "type": "Color",
+                "name": "<C>"
+            },
+            {
+                "type": "Material",
+                "name": "<M>"
+            },
+            {
+                "type": "Shape",
+                "name": "<S>"
+            },
+            {
+                "type": "Size",
+                "name": "<Z2>"
+            },
+            {
+                "type": "Color",
+                "name": "<C2>"
+            },
+            {
+                "type": "Material",
+                "name": "<M2>"
+            },
+            {
+                "type": "Partname",
+                "name": "<P>"
+            }
+        ],
+        "constraints": [
+            {
+                "params": [
+                    "<Z>"
+                ],
+                "type": "NULL"
+            },
+            {
+                "params": [
+                    "<Z2>"
+                ],
+                "type": "NULL"
+            },
+            {
+                "params": [
+                    "<C2>"
+                ],
+                "type": "NULL"
+            },
+            {
+                "params": [
+                    "<M2>"
+                ],
+                "type": "NULL"
+            }
+        ]
+    },
+    {
+        "text": [
+            "What is the color of the <Z2> <C2> <M2> <P> which belongs to the <Z> <C> <M> <S> which is occluded?",
+            "What is the color of the <Z2> <C2> <M2> <P> which belongs to an occluded <Z> <C> <M> <S>?"
+        ],
+        "nodes": [
+            {
+                "inputs": [],
+                "type": "scene"
+            },
+            {
+                "inputs": [
+                    0
+                ],
+                "type": "filter_occludee"
+            },
+            {
+                "side_inputs": [
+                    "<Z>",
+                    "<C>",
+                    "<M>",
+                    "<S>"
+                ],
+                "inputs": [
+                    1
+                ],
+                "type": "filter"
+            },
+            {
+                "inputs": [
+                    2
+                ],
+                "type": "object2part"
+            },
+            {
+                "side_inputs": [
+                    "<Z2>",
+                    "<C2>",
+                    "<M2>",
+                    "<P>"
+                ],
+                "inputs": [
+                    3
+                ],
+                "type": "partfilter_unique"
+            },
+            {
+                "inputs": [
+                    4
+                ],
+                "type": "partquery_color"
+            }
+        ],
+        "params": [
+            {
+                "type": "Size",
+                "name": "<Z>"
+            },
+            {
+                "type": "Color",
+                "name": "<C>"
+            },
+            {
+                "type": "Material",
+                "name": "<M>"
+            },
+            {
+                "type": "Shape",
+                "name": "<S>"
+            },
+            {
+                "type": "Partname",
+                "name": "<P>"
+            },
+            {
+                "type": "Size",
+                "name": "<Z2>"
+            },
+            {
+                "type": "Color",
+                "name": "<C2>"
+            },
+            {
+                "type": "Material",
+                "name": "<M2>"
+            }
+        ],
+        "constraints": [
+            {
+                "params": [
+                    "<Z2>"
+                ],
+                "type": "NULL"
+            },
+            {
+                "params": [
+                    "<C2>"
+                ],
+                "type": "NULL"
+            },
+            {
+                "params": [
+                    "<Z>",
+                    "<C>",
+                    "<M>",
+                    "<S>"
+                ],
+                "type": "NOT_ALL_NULL"
+            }
+        ]
+    },
+    {
+        "text": [
+            "What is the name of the <Z2> <C2> <M2> <P> which belongs to the <Z> <C> <M> <S> which is occluded?",
+            "What is the name of the <Z2> <C2> <M2> <P> which belongs to an occluded <Z> <C> <M> <S>?"
+        ],
+        "nodes": [
+            {
+                "inputs": [],
+                "type": "scene"
+            },
+            {
+                "inputs": [
+                    0
+                ],
+                "type": "filter_occludee"
+            },
+            {
+                "side_inputs": [
+                    "<Z>",
+                    "<C>",
+                    "<M>",
+                    "<S>"
+                ],
+                "inputs": [
+                    1
+                ],
+                "type": "filter"
+            },
+            {
+                "inputs": [
+                    2
+                ],
+                "type": "object2part"
+            },
+            {
+                "side_inputs": [
+                    "<Z2>",
+                    "<C2>",
+                    "<M2>",
+                    "<P>"
+                ],
+                "inputs": [
+                    3
+                ],
+                "type": "partfilter_unique"
+            },
+            {
+                "inputs": [
+                    4
+                ],
+                "type": "partquery_partname"
+            }
+        ],
+        "params": [
+            {
+                "type": "Size",
+                "name": "<Z>"
+            },
+            {
+                "type": "Color",
+                "name": "<C>"
+            },
+            {
+                "type": "Material",
+                "name": "<M>"
+            },
+            {
+                "type": "Shape",
+                "name": "<S>"
+            },
+            {
+                "type": "Partname",
+                "name": "<P>"
+            },
+            {
+                "type": "Size",
+                "name": "<Z2>"
+            },
+            {
+                "type": "Color",
+                "name": "<C2>"
+            },
+            {
+                "type": "Material",
+                "name": "<M2>"
+            }
+        ],
+        "constraints": [
+            {
+                "params": [
+                    "<Z2>"
+                ],
+                "type": "NULL"
+            },
+            {
+                "params": [
+                    "<P>"
+                ],
+                "type": "NULL"
+            },
+            {
+                "params": [
+                    "<Z>",
+                    "<C>",
+                    "<M>",
+                    "<S>"
+                ],
+                "type": "NOT_ALL_NULL"
+            }
+        ]
+    },
+    {
+        "text": [
+            "What is the material of the <Z2> <C2> <M2> <P> which belongs to the <Z> <C> <M> <S> which is occluded?",
+            "What is the material of the <Z2> <C2> <M2> <P> which belongs to an occluded <Z> <C> <M> <S>?"
+        ],
+        "nodes": [
+            {
+                "inputs": [],
+                "type": "scene"
+            },
+            {
+                "inputs": [
+                    0
+                ],
+                "type": "filter_occludee"
+            },
+            {
+                "side_inputs": [
+                    "<Z>",
+                    "<C>",
+                    "<M>",
+                    "<S>"
+                ],
+                "inputs": [
+                    1
+                ],
+                "type": "filter"
+            },
+            {
+                "inputs": [
+                    2
+                ],
+                "type": "object2part"
+            },
+            {
+                "side_inputs": [
+                    "<Z2>",
+                    "<C2>",
+                    "<M2>",
+                    "<P>"
+                ],
+                "inputs": [
+                    3
+                ],
+                "type": "partfilter_unique"
+            },
+            {
+                "inputs": [
+                    4
+                ],
+                "type": "partquery_material"
+            }
+        ],
+        "params": [
+            {
+                "type": "Size",
+                "name": "<Z>"
+            },
+            {
+                "type": "Color",
+                "name": "<C>"
+            },
+            {
+                "type": "Material",
+                "name": "<M>"
+            },
+            {
+                "type": "Shape",
+                "name": "<S>"
+            },
+            {
+                "type": "Partname",
+                "name": "<P>"
+            },
+            {
+                "type": "Size",
+                "name": "<Z2>"
+            },
+            {
+                "type": "Color",
+                "name": "<C2>"
+            },
+            {
+                "type": "Material",
+                "name": "<M2>"
+            }
+        ],
+        "constraints": [
+            {
+                "params": [
+                    "<Z2>"
+                ],
+                "type": "NULL"
+            },
+            {
+                "params": [
+                    "<M2>"
+                ],
+                "type": "NULL"
+            },
+            {
+                "params": [
+                    "<Z>",
+                    "<C>",
+                    "<M>",
+                    "<S>"
+                ],
+                "type": "NOT_ALL_NULL"
+            }
+        ]
+    },
+    {
+        "text": [
+            "What is the name of the <Z2> <C2> <M2> <P> which belongs to the <Z> <C> <M> <S> whose <Z3> <C3> <M3> <P2> is occluded?"
+        ],
+        "nodes": [
+            {
+                "inputs": [],
+                "type": "scene"
+            },
+            {
+                "inputs": [
+                    0
+                ],
+                "type": "object2part_all"
+            },
+            {
+                "inputs": [
+                    1
+                ],
+                "type": "partfilter_occludee"
+            },
+            {
+                "side_inputs": [
+                    "<Z3>",
+                    "<C3>",
+                    "<M3>",
+                    "<P2>"
+                ],
+                "inputs": [
+                    2
+                ],
+                "type": "partfilter"
+            },
+            {
+                "inputs": [
+                    3
+                ],
+                "type": "part2object"
+            },
+            {
+                "side_inputs": [
+                    "<Z>",
+                    "<C>",
+                    "<M>",
+                    "<S>"
+                ],
+                "inputs": [
+                    4
+                ],
+                "type": "filter"
+            },
+            {
+                "inputs": [
+                    5
+                ],
+                "type": "object2part"
+            },
+            {
+                "side_inputs": [
+                    "<Z2>",
+                    "<C2>",
+                    "<M2>",
+                    "<P>"
+                ],
+                "inputs": [
+                    6
+                ],
+                "type": "partfilter_unique"
+            },
+            {
+                "inputs": [
+                    7
+                ],
+                "type": "partquery_partname"
+            }
+        ],
+        "params": [
+            {
+                "type": "Size",
+                "name": "<Z>"
+            },
+            {
+                "type": "Color",
+                "name": "<C>"
+            },
+            {
+                "type": "Material",
+                "name": "<M>"
+            },
+            {
+                "type": "Shape",
+                "name": "<S>"
+            },
+            {
+                "type": "Partname",
+                "name": "<P>"
+            },
+            {
+                "type": "Size",
+                "name": "<Z2>"
+            },
+            {
+                "type": "Color",
+                "name": "<C2>"
+            },
+            {
+                "type": "Material",
+                "name": "<M2>"
+            },
+            {
+                "type": "Partname",
+                "name": "<P2>"
+            },
+            {
+                "type": "Size",
+                "name": "<Z3>"
+            },
+            {
+                "type": "Color",
+                "name": "<C3>"
+            },
+            {
+                "type": "Material",
+                "name": "<M3>"
+            }
+        ],
+        "constraints": [
+            {
+                "params": [
+                    "<Z2>"
+                ],
+                "type": "NULL"
+            },
+            {
+                "params": [
+                    "<P>"
+                ],
+                "type": "NULL"
+            },
+            {
+                "params": [
+                    "<Z3>"
+                ],
+                "type": "NULL"
+            },
+            {
+                "params": [
+                    "<C3>"
+                ],
+                "type": "NULL"
+            },
+            {
+                "params": [
+                    "<M3>"
+                ],
+                "type": "NULL"
+            },
+            {
+                "params": [
+                    3,
+                    7
+                ],
+                "type": "OUT_NEQ"
+            }
+        ]
+    },
+    {
+        "text": [
+            "What is the color of the <Z2> <C2> <M2> <P> which belongs to the <Z> <C> <M> <S> whose <Z3> <C3> <M3> <P2> is occluded?"
+        ],
+        "nodes": [
+            {
+                "inputs": [],
+                "type": "scene"
+            },
+            {
+                "inputs": [
+                    0
+                ],
+                "type": "object2part_all"
+            },
+            {
+                "inputs": [
+                    1
+                ],
+                "type": "partfilter_occludee"
+            },
+            {
+                "side_inputs": [
+                    "<Z3>",
+                    "<C3>",
+                    "<M3>",
+                    "<P2>"
+                ],
+                "inputs": [
+                    2
+                ],
+                "type": "partfilter"
+            },
+            {
+                "inputs": [
+                    3
+                ],
+                "type": "part2object"
+            },
+            {
+                "side_inputs": [
+                    "<Z>",
+                    "<C>",
+                    "<M>",
+                    "<S>"
+                ],
+                "inputs": [
+                    4
+                ],
+                "type": "filter"
+            },
+            {
+                "inputs": [
+                    5
+                ],
+                "type": "object2part"
+            },
+            {
+                "side_inputs": [
+                    "<Z2>",
+                    "<C2>",
+                    "<M2>",
+                    "<P>"
+                ],
+                "inputs": [
+                    6
+                ],
+                "type": "partfilter_unique"
+            },
+            {
+                "inputs": [
+                    7
+                ],
+                "type": "partquery_color"
+            }
+        ],
+        "params": [
+            {
+                "type": "Size",
+                "name": "<Z>"
+            },
+            {
+                "type": "Color",
+                "name": "<C>"
+            },
+            {
+                "type": "Material",
+                "name": "<M>"
+            },
+            {
+                "type": "Shape",
+                "name": "<S>"
+            },
+            {
+                "type": "Partname",
+                "name": "<P>"
+            },
+            {
+                "type": "Size",
+                "name": "<Z2>"
+            },
+            {
+                "type": "Color",
+                "name": "<C2>"
+            },
+            {
+                "type": "Material",
+                "name": "<M2>"
+            },
+            {
+                "type": "Partname",
+                "name": "<P2>"
+            },
+            {
+                "type": "Size",
+                "name": "<Z3>"
+            },
+            {
+                "type": "Color",
+                "name": "<C3>"
+            },
+            {
+                "type": "Material",
+                "name": "<M3>"
+            }
+        ],
+        "constraints": [
+            {
+                "params": [
+                    "<C2>"
+                ],
+                "type": "NULL"
+            },
+            {
+                "params": [
+                    "<P>"
+                ],
+                "type": "NULL"
+            },
+            {
+                "params": [
+                    "<Z3>"
+                ],
+                "type": "NULL"
+            },
+            {
+                "params": [
+                    "<C3>"
+                ],
+                "type": "NULL"
+            },
+            {
+                "params": [
+                    "<M3>"
+                ],
+                "type": "NULL"
+            },
+            {
+                "params": [
+                    3,
+                    7
+                ],
+                "type": "OUT_NEQ"
+            }
+        ]
+    },
+    {
+        "text": [
+            "What is the material of the <Z2> <C2> <M2> <P> which belongs to the <Z> <C> <M> <S> whose <Z3> <C3> <M3> <P2> is occluded?"
+        ],
+        "nodes": [
+            {
+                "inputs": [],
+                "type": "scene"
+            },
+            {
+                "inputs": [
+                    0
+                ],
+                "type": "object2part_all"
+            },
+            {
+                "inputs": [
+                    1
+                ],
+                "type": "partfilter_occludee"
+            },
+            {
+                "side_inputs": [
+                    "<Z3>",
+                    "<C3>",
+                    "<M3>",
+                    "<P2>"
+                ],
+                "inputs": [
+                    2
+                ],
+                "type": "partfilter"
+            },
+            {
+                "inputs": [
+                    3
+                ],
+                "type": "part2object"
+            },
+            {
+                "side_inputs": [
+                    "<Z>",
+                    "<C>",
+                    "<M>",
+                    "<S>"
+                ],
+                "inputs": [
+                    4
+                ],
+                "type": "filter"
+            },
+            {
+                "inputs": [
+                    5
+                ],
+                "type": "object2part"
+            },
+            {
+                "side_inputs": [
+                    "<Z2>",
+                    "<C2>",
+                    "<M2>",
+                    "<P>"
+                ],
+                "inputs": [
+                    6
+                ],
+                "type": "partfilter_unique"
+            },
+            {
+                "inputs": [
+                    7
+                ],
+                "type": "partquery_material"
+            }
+        ],
+        "params": [
+            {
+                "type": "Size",
+                "name": "<Z>"
+            },
+            {
+                "type": "Color",
+                "name": "<C>"
+            },
+            {
+                "type": "Material",
+                "name": "<M>"
+            },
+            {
+                "type": "Shape",
+                "name": "<S>"
+            },
+            {
+                "type": "Partname",
+                "name": "<P>"
+            },
+            {
+                "type": "Size",
+                "name": "<Z2>"
+            },
+            {
+                "type": "Color",
+                "name": "<C2>"
+            },
+            {
+                "type": "Material",
+                "name": "<M2>"
+            },
+            {
+                "type": "Partname",
+                "name": "<P2>"
+            },
+            {
+                "type": "Size",
+                "name": "<Z3>"
+            },
+            {
+                "type": "Color",
+                "name": "<C3>"
+            },
+            {
+                "type": "Material",
+                "name": "<M3>"
+            }
+        ],
+        "constraints": [
+            {
+                "params": [
+                    "<M2>"
+                ],
+                "type": "NULL"
+            },
+            {
+                "params": [
+                    "<P>"
+                ],
+                "type": "NULL"
+            },
+            {
+                "params": [
+                    "<Z3>"
+                ],
+                "type": "NULL"
+            },
+            {
+                "params": [
+                    "<C3>"
+                ],
+                "type": "NULL"
+            },
+            {
+                "params": [
+                    "<M3>"
+                ],
+                "type": "NULL"
+            },
+            {
+                "params": [
+                    3,
+                    7
+                ],
+                "type": "OUT_NEQ"
+            }
+        ]
+    }
+]

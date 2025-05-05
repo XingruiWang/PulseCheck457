@@ -1,0 +1,240 @@
+[
+    {
+        "text": [
+            "Which direction the <Z> <C> <S> <R> is facing?"
+        ],
+        "nodes": [
+            {
+                "inputs": [],
+                "type": "scene"
+            },
+            {
+                "side_inputs": [
+                    "<R>",
+                    "<Z>",
+                    "<C>",
+                    "<S>"
+                ],
+                "inputs": [
+                    0
+                ],
+                "type": "filter_unique"
+            },
+            {
+                "inputs": [
+                    1
+                ],
+                "type": "query_pose"
+            }
+        ],
+        "params": [
+            {
+                "type": "Size",
+                "name": "<Z>"
+            },
+            {
+                "type": "Color",
+                "name": "<C>"
+            },
+            {
+                "type": "Shape",
+                "name": "<S>"
+            },
+            {
+                "type": "Pose",
+                "name": "<R>"
+            }
+        ],
+        "constraints": [
+            {
+                "params": [
+                    "<R>"
+                ],
+                "type": "NULL"
+            }
+        ]
+    },
+    {
+        "text": [
+            "What is the color of the <Z> <C> <S> which faces to the <R>?"
+        ],
+        "nodes": [
+            {
+                "inputs": [],
+                "type": "scene"
+            },
+            {
+                "side_inputs": [
+                    "<R>",
+                    "<Z>",
+                    "<C>",
+                    "<S>"
+                ],
+                "inputs": [
+                    0
+                ],
+                "type": "filter_unique"
+            },
+            {
+                "inputs": [
+                    1
+                ],
+                "type": "query_color"
+            }
+        ],
+        "params": [
+            {
+                "type": "Size",
+                "name": "<Z>"
+            },
+            {
+                "type": "Color",
+                "name": "<C>"
+            },
+            {
+                "type": "Shape",
+                "name": "<S>"
+            },
+            {
+                "type": "Pose",
+                "name": "<R>"
+            }
+        ],
+        "constraints": [
+            {
+                "params": [
+                    "<C>"
+                ],
+                "type": "NULL"
+            },
+            {
+                "params": [
+                    "<R>"
+                ],
+                "type": "NOT-NULL"
+            }
+        ]
+    },
+    {
+        "text": [
+            "What is the size of the <Z> <C> <S> which faces to the <R>?"
+        ],
+        "nodes": [
+            {
+                "inputs": [],
+                "type": "scene"
+            },
+            {
+                "side_inputs": [
+                    "<R>",
+                    "<Z>",
+                    "<C>",
+                    "<S>"
+                ],
+                "inputs": [
+                    0
+                ],
+                "type": "filter_unique"
+            },
+            {
+                "inputs": [
+                    1
+                ],
+                "type": "query_size"
+            }
+        ],
+        "params": [
+            {
+                "type": "Size",
+                "name": "<Z>"
+            },
+            {
+                "type": "Color",
+                "name": "<C>"
+            },
+            {
+                "type": "Shape",
+                "name": "<S>"
+            },
+            {
+                "type": "Pose",
+                "name": "<R>"
+            }
+        ],
+        "constraints": [
+            {
+                "params": [
+                    "<Z>"
+                ],
+                "type": "NULL"
+            },
+            {
+                "params": [
+                    "<R>"
+                ],
+                "type": "NOT-NULL"
+            }
+        ]
+    },
+    {
+        "text": [
+            "What is the shape of the <Z> <C> <S> which faces to the <R>?"
+        ],
+        "nodes": [
+            {
+                "inputs": [],
+                "type": "scene"
+            },
+            {
+                "side_inputs": [
+                    "<R>",
+                    "<Z>",
+                    "<C>",
+                    "<S>"
+                ],
+                "inputs": [
+                    0
+                ],
+                "type": "filter_unique"
+            },
+            {
+                "inputs": [
+                    1
+                ],
+                "type": "query_shape"
+            }
+        ],
+        "params": [
+            {
+                "type": "Size",
+                "name": "<Z>"
+            },
+            {
+                "type": "Color",
+                "name": "<C>"
+            },
+            {
+                "type": "Shape",
+                "name": "<S>"
+            },
+            {
+                "type": "Pose",
+                "name": "<R>"
+            }
+        ],
+        "constraints": [
+            {
+                "params": [
+                    "<S>"
+                ],
+                "type": "NULL"
+            },
+            {
+                "params": [
+                    "<R>"
+                ],
+                "type": "NOT-NULL"
+            }
+        ]
+    }
+]

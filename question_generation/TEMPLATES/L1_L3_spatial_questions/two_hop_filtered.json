@@ -1,0 +1,525 @@
+[
+    {
+        "text": [
+            "How many <Z3> <C3> <S3>s are <R2> the <Z2> <C2> <S2> [that is] <R> the <Z> <C> <S>?",
+            "What number of <Z3> <C3> <S3>s are <R2> the <Z2> <C2> <S2> [that is] <R> the <Z> <C> <S>?",
+            "There is a <Z2> <C2> <S2> [that is] <R> the <Z> <C> <S>; how many <Z3> <C3> <S3>s are <R2> it?",
+            "There is a <Z2> <C2> <S2> [that is] <R> the <Z> <C> <S>; what number of <Z3> <C3> <S3>s are <R2> it?"
+        ],
+        "nodes": [
+            {
+                "inputs": [],
+                "type": "scene"
+            },
+            {
+                "side_inputs": [
+                    "<Z>",
+                    "<C>",
+                    "<S>"
+                ],
+                "inputs": [
+                    0
+                ],
+                "type": "filter_unique"
+            },
+            {
+                "side_inputs": [
+                    "<R>",
+                    "<Z2>",
+                    "<C2>",
+                    "<S2>"
+                ],
+                "inputs": [
+                    1
+                ],
+                "type": "relate_filter_unique"
+            },
+            {
+                "side_inputs": [
+                    "<R2>",
+                    "<Z3>",
+                    "<C3>",
+                    "<S3>"
+                ],
+                "inputs": [
+                    2
+                ],
+                "type": "relate_filter_count"
+            }
+        ],
+        "params": [
+            {
+                "type": "Size",
+                "name": "<Z>"
+            },
+            {
+                "type": "Color",
+                "name": "<C>"
+            },
+            {
+                "type": "Shape",
+                "name": "<S>"
+            },
+            {
+                "type": "Relation",
+                "name": "<R>"
+            },
+            {
+                "type": "Size",
+                "name": "<Z2>"
+            },
+            {
+                "type": "Color",
+                "name": "<C2>"
+            },
+            {
+                "type": "Shape",
+                "name": "<S2>"
+            },
+            {
+                "type": "Relation",
+                "name": "<R2>"
+            },
+            {
+                "type": "Size",
+                "name": "<Z3>"
+            },
+            {
+                "type": "Color",
+                "name": "<C3>"
+            },
+            {
+                "type": "Shape",
+                "name": "<S3>"
+            }
+        ],
+        "constraints": []
+    },
+    {
+        "text": [
+            "Are there any <Z3> <C3> <S3>s [that are] <R2> the <Z2> <C2> <S2> [that is] <R> the <Z> <C> <S>?",
+            "Is there a <Z3> <C3> <S3> [that is] <R2> the <Z2> <C2> <S2> [that is] <R> the <Z> <C> <S>?",
+            "There is a <Z2> <C2> <S2> [that is] <R> the <Z> <C> <S>; are there any <Z3> <C3> <S3>s [that are] <R2> it?",
+            "There is a <Z2> <C2> <S2> [that is] <R> the <Z> <C> <S>; is there a <Z3> <C3> <S3> [that is] <R2> it?"
+        ],
+        "nodes": [
+            {
+                "inputs": [],
+                "type": "scene"
+            },
+            {
+                "side_inputs": [
+                    "<Z>",
+                    "<C>",
+                    "<S>"
+                ],
+                "inputs": [
+                    0
+                ],
+                "type": "filter_unique"
+            },
+            {
+                "side_inputs": [
+                    "<R>",
+                    "<Z2>",
+                    "<C2>",
+                    "<S2>"
+                ],
+                "inputs": [
+                    1
+                ],
+                "type": "relate_filter_unique"
+            },
+            {
+                "side_inputs": [
+                    "<R2>",
+                    "<Z3>",
+                    "<C3>",
+                    "<S3>"
+                ],
+                "inputs": [
+                    2
+                ],
+                "type": "relate_filter_exist"
+            }
+        ],
+        "params": [
+            {
+                "type": "Size",
+                "name": "<Z>"
+            },
+            {
+                "type": "Color",
+                "name": "<C>"
+            },
+            {
+                "type": "Shape",
+                "name": "<S>"
+            },
+            {
+                "type": "Relation",
+                "name": "<R>"
+            },
+            {
+                "type": "Size",
+                "name": "<Z2>"
+            },
+            {
+                "type": "Color",
+                "name": "<C2>"
+            },
+            {
+                "type": "Shape",
+                "name": "<S2>"
+            },
+            {
+                "type": "Relation",
+                "name": "<R2>"
+            },
+            {
+                "type": "Size",
+                "name": "<Z3>"
+            },
+            {
+                "type": "Color",
+                "name": "<C3>"
+            },
+            {
+                "type": "Shape",
+                "name": "<S3>"
+            }
+        ],
+        "constraints": []
+    },
+    {
+        "text": [
+            "What size is the <Z3> <C3> <S3> [that is] <R2> the <Z2> <C2> <S2> [that is] <R> the <Z> <C> <S>?",
+            "What is the size of the <Z3> <C3> <S3> [that is] <R2> the <Z2> <C2> <S2> [that is] <R> the <Z> <C> <S>?",
+            "How big is the <Z3> <C3> <S3> [that is] <R2> the <Z2> <C2> <S2> [that is] <R> the <Z> <C> <S>?",
+            "There is a <Z3> <C3> <S3> [that is] <R2> the <Z2> <C2> <S2> [that is] <R> the <Z> <C> <S>; what size is it?",
+            "There is a <Z3> <C3> <S3> [that is] <R2> the <Z2> <C2> <S2> [that is] <R> the <Z> <C> <S>; what is its size?",
+            "There is a <Z3> <C3> <S3> [that is] <R2> the <Z2> <C2> <S2> [that is] <R> the <Z> <C> <S>; how big is it?"
+        ],
+        "nodes": [
+            {
+                "inputs": [],
+                "type": "scene"
+            },
+            {
+                "side_inputs": [
+                    "<Z>",
+                    "<C>",
+                    "<S>"
+                ],
+                "inputs": [
+                    0
+                ],
+                "type": "filter_unique"
+            },
+            {
+                "side_inputs": [
+                    "<R>",
+                    "<Z2>",
+                    "<C2>",
+                    "<S2>"
+                ],
+                "inputs": [
+                    1
+                ],
+                "type": "relate_filter_unique"
+            },
+            {
+                "side_inputs": [
+                    "<R2>",
+                    "<Z3>",
+                    "<C3>",
+                    "<S3>"
+                ],
+                "inputs": [
+                    2
+                ],
+                "type": "relate_filter_unique"
+            },
+            {
+                "inputs": [
+                    3
+                ],
+                "type": "query_size"
+            }
+        ],
+        "params": [
+            {
+                "type": "Size",
+                "name": "<Z>"
+            },
+            {
+                "type": "Color",
+                "name": "<C>"
+            },
+            {
+                "type": "Shape",
+                "name": "<S>"
+            },
+            {
+                "type": "Relation",
+                "name": "<R>"
+            },
+            {
+                "type": "Size",
+                "name": "<Z2>"
+            },
+            {
+                "type": "Color",
+                "name": "<C2>"
+            },
+            {
+                "type": "Shape",
+                "name": "<S2>"
+            },
+            {
+                "type": "Relation",
+                "name": "<R2>"
+            },
+            {
+                "type": "Size",
+                "name": "<Z3>"
+            },
+            {
+                "type": "Color",
+                "name": "<C3>"
+            },
+            {
+                "type": "Shape",
+                "name": "<S3>"
+            }
+        ],
+        "constraints": [
+            {
+                "params": [
+                    "<Z3>"
+                ],
+                "type": "NULL"
+            }
+        ]
+    },
+    {
+        "text": [
+            "What color is the <Z3> <C3> <S3> [that is] <R2> the <Z2> <C2> <S2> [that is] <R> the <Z> <C> <S>?",
+            "What is the color of the <Z3> <C3> <S3> [that is] <R2> the <Z2> <C2> <S2> [that is] <R> the <Z> <C> <S>?",
+            "The <Z3> <C3> <S3> [that is] <R2> the <Z2> <C2> <S2> [that is] <R> the <Z> <C> <S> is what color?",
+            "There is a <Z3> <C3> <S3> [that is] <R2> the <Z2> <C2> <S2> [that is] <R> the <Z> <C> <S>; what color is it?",
+            "There is a <Z3> <C3> <S3> [that is] <R2> the <Z2> <C2> <S2> [that is] <R> the <Z> <C> <S>; what is its color?"
+        ],
+        "nodes": [
+            {
+                "inputs": [],
+                "type": "scene"
+            },
+            {
+                "side_inputs": [
+                    "<Z>",
+                    "<C>",
+                    "<S>"
+                ],
+                "inputs": [
+                    0
+                ],
+                "type": "filter_unique"
+            },
+            {
+                "side_inputs": [
+                    "<R>",
+                    "<Z2>",
+                    "<C2>",
+                    "<S2>"
+                ],
+                "inputs": [
+                    1
+                ],
+                "type": "relate_filter_unique"
+            },
+            {
+                "side_inputs": [
+                    "<R2>",
+                    "<Z3>",
+                    "<C3>",
+                    "<S3>"
+                ],
+                "inputs": [
+                    2
+                ],
+                "type": "relate_filter_unique"
+            },
+            {
+                "inputs": [
+                    3
+                ],
+                "type": "query_color"
+            }
+        ],
+        "params": [
+            {
+                "type": "Size",
+                "name": "<Z>"
+            },
+            {
+                "type": "Color",
+                "name": "<C>"
+            },
+            {
+                "type": "Shape",
+                "name": "<S>"
+            },
+            {
+                "type": "Relation",
+                "name": "<R>"
+            },
+            {
+                "type": "Size",
+                "name": "<Z2>"
+            },
+            {
+                "type": "Color",
+                "name": "<C2>"
+            },
+            {
+                "type": "Shape",
+                "name": "<S2>"
+            },
+            {
+                "type": "Relation",
+                "name": "<R2>"
+            },
+            {
+                "type": "Size",
+                "name": "<Z3>"
+            },
+            {
+                "type": "Color",
+                "name": "<C3>"
+            },
+            {
+                "type": "Shape",
+                "name": "<S3>"
+            }
+        ],
+        "constraints": [
+            {
+                "params": [
+                    "<C3>"
+                ],
+                "type": "NULL"
+            }
+        ]
+    },
+    {
+        "text": [
+            "What shape is the <Z3> <C3> <S3> [that is] <R2> the <Z2> <C2> <S2> [that is] <R> the <Z> <C> <S>?",
+            "What is the shape of the <Z3> <C3> <S3> [that is] <R2> the <Z2> <C2> <S2> [that is] <R> the <Z> <C> <S>?",
+            "The <Z3> <C3> <S3> [that is] <R2> the <Z2> <C2> <S2> [that is] <R> the <Z> <C> <S> is what shape?",
+            "There is a <Z3> <C3> <S3> [that is] <R2> the <Z2> <C2> <S2> [that is] <R> the <Z> <C> <S>; what shape is it?",
+            "There is a <Z3> <C3> <S3> [that is] <R2> the <Z2> <C2> <S2> [that is] <R> the <Z> <C> <S>; what is its shape?"
+        ],
+        "nodes": [
+            {
+                "inputs": [],
+                "type": "scene"
+            },
+            {
+                "side_inputs": [
+                    "<Z>",
+                    "<C>",
+                    "<S>"
+                ],
+                "inputs": [
+                    0
+                ],
+                "type": "filter_unique"
+            },
+            {
+                "side_inputs": [
+                    "<R>",
+                    "<Z2>",
+                    "<C2>",
+                    "<S2>"
+                ],
+                "inputs": [
+                    1
+                ],
+                "type": "relate_filter_unique"
+            },
+            {
+                "side_inputs": [
+                    "<R2>",
+                    "<Z3>",
+                    "<C3>",
+                    "<S3>"
+                ],
+                "inputs": [
+                    2
+                ],
+                "type": "relate_filter_unique"
+            },
+            {
+                "inputs": [
+                    3
+                ],
+                "type": "query_shape"
+            }
+        ],
+        "params": [
+            {
+                "type": "Size",
+                "name": "<Z>"
+            },
+            {
+                "type": "Color",
+                "name": "<C>"
+            },
+            {
+                "type": "Shape",
+                "name": "<S>"
+            },
+            {
+                "type": "Relation",
+                "name": "<R>"
+            },
+            {
+                "type": "Size",
+                "name": "<Z2>"
+            },
+            {
+                "type": "Color",
+                "name": "<C2>"
+            },
+            {
+                "type": "Shape",
+                "name": "<S2>"
+            },
+            {
+                "type": "Relation",
+                "name": "<R2>"
+            },
+            {
+                "type": "Size",
+                "name": "<Z3>"
+            },
+            {
+                "type": "Color",
+                "name": "<C3>"
+            },
+            {
+                "type": "Shape",
+                "name": "<S3>"
+            }
+        ],
+        "constraints": [
+            {
+                "params": [
+                    "<S3>"
+                ],
+                "type": "NULL"
+            }
+        ]
+    }
+]
