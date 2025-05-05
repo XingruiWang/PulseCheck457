@@ -81,6 +81,17 @@ We use blender to render the scenes, so you can also add customed objects in to 
 
 See `image_generation/README.md`
 
+The result will contains forder of image, and a json file scene annotation
+
+## Generate questions
+
+Run bash script to generate all levels of question. Set `input_scene_file` as the json file scene annotation. 
+
+```bash
+bash scripts/generate_questions.sh
+
+```
+
 
 <h2 class="title is-3">Citation</h2>
 
