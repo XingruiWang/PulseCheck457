@@ -18,7 +18,7 @@ python generate_questions_pose.py\
 python generate_questions_pose.py\
    --input_scene_file /home/xingrui/publish/3D-Aware-VQA/superclevr-3D-question/output/ver_mask_30k_clean/superCLEVR_scenes_30k_occlusion.json \
    --scene_start_idx ${START_IDX} \
-   --num_scenes 20000 \
+   --num_scenes 1000 \
    --instances_per_template 1 \
    --templates_per_image 5 \
    --metadata_file metadata_part_occlusion.json \
@@ -46,7 +46,7 @@ python generate_questions_pose.py\
 python generate_questions_pose.py \
    --input_scene_file /home/xingrui/publish/3D-Aware-VQA/superclevr-3D-question/output/ver_mask_30k_clean/superCLEVR_scenes_30k_occlusion.json \
    --scene_start_idx ${START_IDX} \
-   --num_scenes 20000 \
+   --num_scenes 1000 \
    --instances_per_template 1 \
    --templates_per_image 5 \
    --metadata_file metadata_part_occlusion.json \
@@ -59,7 +59,7 @@ python generate_questions_pose.py \
 python generate_questions_pose.py \
    --input_scene_file /home/xingrui/publish/3D-Aware-VQA/superclevr-3D-question/output/ver_mask_30k_clean/superCLEVR_scenes_30k_occlusion.json \
    --scene_start_idx ${START_IDX} \
-   --num_scenes 20000 \
+   --num_scenes 1000 \
    --instances_per_template 1 \
    --templates_per_image 5 \
    --metadata_file metadata_part_occlusion.json \
