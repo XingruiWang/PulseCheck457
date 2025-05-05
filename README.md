@@ -77,6 +77,11 @@ python run.py --data Spatial457 --model <model_name>
 
 We use blender to render the scenes, so you can also add customed objects in to dataset. We also support you customized you own questions type / templates for your studies.  The source code of dataset generation is avaiable soon.
 
+## Generate images
+
+See `image_generation/README.md`
+
+
 <h2 class="title is-3">Citation</h2>
 
 ```
