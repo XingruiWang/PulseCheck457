@@ -65,7 +65,7 @@ The table below summarizes model performance across 7 subsets:
 </p>
 -->
 
-# 🔥Try on [VLMEvalKit](https://github.com/open-compass/VLMEvalKit).
+# 🔥Run benchmark with [VLMEvalKit](https://github.com/open-compass/VLMEvalKit).
 
 Spatial457 is also support by [VLMEvalKit](https://github.com/open-compass/VLMEvalKit)! Please try [here](https://github.com/open-compass/VLMEvalKit) for quick evaluation on most of the VLM. Evaluation can be done be running `run.py` in VLMEvalKit:
 
